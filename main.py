@@ -7,8 +7,11 @@ from pymongo import MongoClient
 # from pprint import pprint
 
 def _mongo():
-    client = MongoClient('mongodb://localhost:27017/')
-    print(client.server_info())
+
+    cloud_URI = "mongodb+srv://evan:<password>@cassavaleaf.elaid.mongodb.net/<dbname>?retryWrites=true&w=majority"
+    client = MongoClient(cloud_URI)
+
+    print(client)
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
