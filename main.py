@@ -4,7 +4,6 @@
 from pymongo import MongoClient
 from PIL import Image
 import io
-from bson.binary import Binary
 import matplotlib.pyplot as plt
 
 
